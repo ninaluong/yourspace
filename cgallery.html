@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <title>Cuddly Gallery</title>
+    </head>
+
+    <body>
+        <!-- sets photo background and has id to identify for later-->
+        <img id="backphoto" src="ysmedia/corgi1.jpg" alt="backphoto">
+        <!-- horizontal menu bar-->
+        <div class="topbar">
+            <a href="https://cuddly-guacamole-px9g6xxjqwpc94q5-8080.app.github.dev/index.html">home</a>
+            <a href="https://cuddly-guacamole-px9g6xxjqwpc94q5-8080.app.github.dev/spaces.html">safe spaces</a>
+            <a href="https://cuddly-guacamole-px9g6xxjqwpc94q5-8080.app.github.dev/affirmations.html">affirmations</a>
+            <a href="https://cuddly-guacamole-px9g6xxjqwpc94q5-8080.app.github.dev/cgallery.html">cuddly gallery</a>
+        </div>
+        <!-- sets buttons to be clicked on to change the background photo-->
+        <div class="buttonbar">
+            <button id="golden">golden retriever</button>
+            <button id="corgi1">corgi 1</button>
+            <button id="corgi2">corgi 2</button>
+            <button id="samoyed">samoyed puppy</button>
+            <button id="ducks">ducklings</button>
+            <button id="hamster">hamster</button>
+            <button id="bunny">bunny</button>
+            <button id="munchkincat">munchkin cat</button>
+            <button id="pomeranian">pomeranian</button>
+
+            <!-- JavaScript and EventListener changes photos according to the button clicked-->
+        <script>
+
+            let backphoto = document.getElementById('backphoto');
+            document.querySelector('#golden').addEventListener('click', function() {
+                backphoto.src = "ysmedia/golden.jpg";
+            });
+            document.querySelector('#corgi1').addEventListener('click', function() {
+                backphoto.src= "ysmedia/corgi1.jpg" ;
+            });
+            document.querySelector('#corgi2').addEventListener('click', function() {
+                backphoto.src= "ysmedia/corgi2.jpg" ;
+            });
+            document.querySelector('#samoyed').addEventListener('click', function() {
+                backphoto.src= "ysmedia/samoyed.jpg" ;
+            });
+            document.querySelector('#ducks').addEventListener('click', function() {
+                backphoto.src= "ysmedia/ducks.jpg" ;
+            });
+            document.querySelector('#hamster').addEventListener('click', function() {
+                backphoto.src= "ysmedia/hamster.jpg" ;
+            });
+            document.querySelector('#bunny').addEventListener('click', function() {
+                backphoto.src= "ysmedia/bunny.jpg" ;
+            });
+            document.querySelector('#munchkincat').addEventListener('click', function() {
+                backphoto.src= "ysmedia/munchkincat.jpg" ;
+            });
+            document.querySelector('#pomeranian').addEventListener('click', function() {
+                backphoto.src= "ysmedia/pomeranian.jpg" ;
+            });
+
+        </script>
+        </div>
+    </body>

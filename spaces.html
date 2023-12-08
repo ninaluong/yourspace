@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <title>Safe Spaces</title>
+    </head>
+
+    <body>
+        <!-- icludes video tag for video background - includes id to reference later-->
+        <video muted loop autoplay id="backvideo">
+            <source src="ysmedia/overbeach.mp4" type="video/mp4">
+          </video>
+        <!-- horizontal menu bar and their links-->
+        <div class="topbar">
+            <a href="https://cuddly-guacamole-px9g6xxjqwpc94q5-8080.app.github.dev/index.html">home</a>
+            <a href="https://cuddly-guacamole-px9g6xxjqwpc94q5-8080.app.github.dev/spaces.html">safe spaces</a>
+            <a href="https://cuddly-guacamole-px9g6xxjqwpc94q5-8080.app.github.dev/affirmations.html">affirmations</a>
+            <a href="https://cuddly-guacamole-px9g6xxjqwpc94q5-8080.app.github.dev/cgallery.html">cuddly gallery</a>
+        </div>
+        <!-- formats all buttons to click to change the background video playing-->
+        <div class="buttonbar">
+            <button id="rain">rain</button>
+            <button id="sunsetbeach">sunset beach</button>
+            <button id="babblingbrook">babbling brook</button>
+            <button id="overheadbeach">overhead beach</button>
+            <button id="fireplace">fireplace</button>
+            <button id="waterfall">waterfall</button>
+            <button id="butterfly">butterfly</button>
+            <button id="calmbeach">calm beach</button>
+
+        <!-- JavaScript that allows for the background videos to change depending on button clicked-->
+        <script>
+
+            let backvideo = document.getElementById('backvideo');
+            document.querySelector('#rain').addEventListener('click', function() {
+                backvideo.src = "ysmedia/rain.mp4";
+            });
+            document.querySelector('#sunsetbeach').addEventListener('click', function() {
+                backvideo.src = "ysmedia/sunsetbeach.mp4" ;
+            });
+            document.querySelector('#babblingbrook').addEventListener('click', function() {
+                backvideo.src = "ysmedia/brook.mp4";
+            });
+            document.querySelector('#overheadbeach').addEventListener('click', function() {
+                backvideo.src = "ysmedia/overbeach.mp4";
+            });
+            document.querySelector('#fireplace').addEventListener('click', function() {
+                backvideo.src = "ysmedia/fireplace.mp4";
+            });
+            document.querySelector('#waterfall').addEventListener('click', function() {
+                backvideo.src = "ysmedia/waterfall.mp4";
+            });
+            document.querySelector('#butterfly').addEventListener('click', function() {
+                backvideo.src = "ysmedia/flowerbutterfly.mp4";
+            });
+            document.querySelector('#calmbeach').addEventListener('click', function() {
+                backvideo.src = "ysmedia/slowbeach.mp4";
+            });
+
+        </script>
+        </div>
+    </body>
